@@ -1,8 +1,9 @@
 import React from "react";
 import "./styles.css";
+import { CardVideo } from "./components/CardVideo";
 
 export default function App() {
-  const titulo = "Título do vídeo";
+ /*  const titulo = "Título do vídeo"; */
 
   function reproduzVideo() {
     alert("O vídeo está sendo reproduzido");
@@ -28,18 +29,16 @@ export default function App() {
           </nav>
 
           <section className="painel-de-videos">
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=1 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=2 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=3 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
+            <CardVideo/>
+            <CardVideo/>
+            <CardVideo/>
+            <CardVideo/>
+            <CardVideo/>
+            <CardVideo/>
+            <CardVideo/>
+            <CardVideo/>
+            </section>
+            
             <div className="box-pagina-principal" onClick={reproduzVideo}>
               <img src="https://picsum.photos/400/400?a=4 " alt="" />
               <h4>{titulo}</h4>
